@@ -144,37 +144,6 @@
         </div>
     </form>
 
-    <%--    information of the searched link--%>
-    <%--    <div class="mt-20 -ml-[52px]">--%>
-    <%--        <h2>Download report for your recent search</h2>--%>
-    <%--        <div class="flex flex-col gap-3 pt-4">--%>
-    <%--            <div class="flex gap-2 items-center">--%>
-    <%--                <h6 class="font-semibold">Website name: </h6>--%>
-    <%--                <span>https://google.com</span>--%>
-    <%--            </div>--%>
-
-    <%--            <div class="flex gap-2 items-center">--%>
-    <%--                <h6 class="font-semibold">Start time: </h6>--%>
-    <%--                <span>16:00 PM CAT</span>--%>
-    <%--            </div>--%>
-
-    <%--            <div class="flex gap-2 items-center">--%>
-    <%--                <h6 class="font-semibold">End time: </h6>--%>
-    <%--                <span>16:00 PM CAT</span>--%>
-    <%--            </div>--%>
-
-    <%--            <div class="flex gap-2 items-center">--%>
-    <%--                <h6 class="font-semibold">Kilobytes: </h6>--%>
-    <%--                <span>34 KBs</span>--%>
-    <%--            </div>--%>
-
-    <%--            <div class="flex gap-2 items-center">--%>
-    <%--                <h6 class="font-semibold">Time taken: </h6>--%>
-    <%--                <span>3 Ms</span>--%>
-    <%--            </div>--%>
-    <%--        </div>--%>
-
-    <%--    </div>--%>
 
     <%--    link to view all the downloaded pages--%>
     <a href="/report" class="-ml-[160px] underline text-[#0369a1] mt-16">View previous reports</a>

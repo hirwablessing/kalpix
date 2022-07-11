@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100&display=swap"
           rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <style>
         * {
             padding: 0;
@@ -53,35 +55,79 @@
             text-align: center;
             padding-top: 12px;
         }
+
+        .form-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+        .form-register-sub{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
     </style>
 </head>
 <body>
 
-<div class="report-container">
-    <h2>Report</h2>
-    <div class="report-container-sub">
-        <table>
-            <thead class="table-header">
-            <th>Link Name</th>
-            <th>Website Name</th>
-            <th>Total elapsed time(MS)</th>
-            <th>Kilobytes Downloaded</th>
+<div class="form-container">
 
-            </thead>
-            <tbody class="table-body">
+<%--        <table>--%>
+<%--            <thead class="table-header">--%>
+<%--            <th>Link Name</th>--%>
+<%--            <th>Website Name</th>--%>
+<%--            <th>Total elapsed time(MS)</th>--%>
+<%--            <th>Kilobytes Downloaded</th>--%>
+
+<%--            </thead>--%>
+<%--            <tbody class="table-body">--%>
+<%--            <c:forEach items="${links}" var="url">--%>
+<%--                <tr>--%>
+<%--                    <td>${url.link_name}</td>--%>
+<%--                    <td>${url.website.website_name}</td>--%>
+<%--                    <td>${url.total_elapsed_time}</td>--%>
+<%--                    <td>${url.total_downloaded_kilobytes}</td>--%>
+<%--                </tr>--%>
+<%--            </c:forEach>--%>
+
+<%--            </tbody>--%>
+<%--        </table>--%>
+
+
+    <div class="mt-20 -ml-[52px]">
+        <h2 class="font-semibold text-xl">Download report for your search</h2>
+
+        <div class="flex flex-col gap-3 pt-4 ">
             <c:forEach items="${links}" var="url">
-                <tr>
-                    <td>${url.link_name}</td>
-                    <td>${url.website.website_name}</td>
-                    <td>${url.total_elapsed_time}</td>
-                    <td>${url.total_downloaded_kilobytes}</td>
-                </tr>
+                <div class="border-b pb-2 border-gray-400">
+                    <div class="flex gap-2 items-center">
+                        <h6 class="font-semibold">Link name: </h6>
+                        <span>${url.link_name}</span>
+                    </div>
+
+                    <div class="flex gap-2 items-center">
+                        <h6 class="font-semibold">Website name: </h6>
+                        <span>${url.website.website_name}</span>
+                    </div>
+
+                    <div class="flex gap-2 items-center">
+                        <h6 class="font-semibold">Took: </h6>
+                        <span>${url.total_elapsed_time}</span>
+                    </div>
+
+                    <div class="flex gap-2 items-center">
+                        <h6 class="font-semibold">Kilobytes: </h6>
+                        <span>${url.total_downloaded_kilobytes}</span>
+                    </div>
+                </div>
             </c:forEach>
+        </div>
 
-            </tbody>
-        </table>
+
     </div>
-
 </div>
 
 </body>

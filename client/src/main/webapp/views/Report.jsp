@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100&display=swap"
           rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <style>
         * {
             padding: 0;
