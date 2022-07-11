@@ -97,7 +97,7 @@
 <%--        </table>--%>
 
 
-    <div class="mt-20 -ml-[52px]">
+    <div class="mt-20 ml-[60px]">
         <h2 class="font-semibold text-xl">Download report for your search</h2>
 
         <div class="flex flex-col gap-3 pt-4 ">

@@ -74,7 +74,7 @@
             <tbody class="table-body">
             <c:forEach items="${websites}" var="url">
                 <tr>
-                    <td class="p-2 text-[#e0f2fe]"><a href="/links/${url.id}">${url.website_name}</td>
+                    <td class="p-2 text-sky-500"><a href="/links/${url.id}">${url.website_name}</td>
                     <td class="p-2">${url.download_start_date_time}</td>
                     <td class="p-2">${url.download_end_date_time}</td>
                     <td class="p-2">${url.total_elapsed_time}</td>
