@@ -101,6 +101,9 @@
         <h2 class="font-semibold text-xl">Download report for your search</h2>
 
         <div class="flex flex-col gap-3 pt-4 ">
+            <c:if test="${empty links}">
+                <span>This website has no links</span>
+            </c:if>
             <c:forEach items="${links}" var="url">
                 <div class="border-b pb-2 border-gray-400">
                     <div class="flex gap-2 items-center">

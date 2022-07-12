@@ -50,7 +50,7 @@ public class UrlController {
             return "redirect:/report";
         } catch (Exception e) {
             ApiResponse response = new ObjectMapper().readValue(e.getMessage().substring(7, e.getMessage().length() - 1), ApiResponse.class);
-            model.addAttribute("error", response.getMessage());
+            model.addAttribute("error", "Invalid url");
 
             return "Url";
         }

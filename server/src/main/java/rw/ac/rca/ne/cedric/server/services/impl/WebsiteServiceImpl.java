@@ -116,7 +116,7 @@ public class WebsiteServiceImpl implements IWebsiteService {
 
             website.setId(UUID.randomUUID());
             Website saved = websiteRepository.save(website);
-            System.out.println(saved.getId());
+
             Set<String> links = findLinks(url.toExternalForm());
             for (String link : links) {
                 CreateLinkDTO linkDTO = new CreateLinkDTO();
